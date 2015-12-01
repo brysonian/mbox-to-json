@@ -1,0 +1,16 @@
+{
+  "name": "mbox-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mboxToJson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandler McWilliams",
+  "license": "ISC",
+  "dependencies": {
+    "mailparser": "^0.5.3",
+    "node-mbox": "^0.2.1",
+    "yargs": "^3.30.0"
+  }
+}
