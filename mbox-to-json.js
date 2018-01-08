@@ -13,11 +13,12 @@ function main() {
 	var messages = [];
 	var total = Infinity;
 	var mbox = new Mbox();
+	var messageCount = 0;
 	mbox.on('message', function(msg) {
 	  // parse message using MailParser
 	  var mailparser = new MailParser({ streamAttachments : true });
 	  mailparser.on('end', function(mail) {
-	  	messages.push(mail);
+		  messages.push(mail);
 	  	if (messages.length == messageCount) {
 	  		console.log('Finished parsing messages');
 	  		if (argv.o)
